@@ -10,4 +10,6 @@
    FORM
 
 ![f1](https://user-images.githubusercontent.com/106505341/200131263-b437a3cb-fc49-4248-8a38-a435921b395e.png)
-![f3](https://user-images.githubusercontent.com/106505341/200131271-d1c8a395-ca0a-415f-a2e5-785ee9ed3b1c.png)
+
+   DASHBOARD
+   ![Screenshot (47)](https://user-images.githubusercontent.com/106505341/201278687-588c21b9-0408-4ea0-97d4-6d5e9cfa1d38.png)
