@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.form-box{
+ width:380px;
+    height:480px;
+    position:relative;
+    margin: 6%  auto;
+    background:#ffb6c1;
+    padding:5 px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: white;
+}
+    </style>
+   </head>
+<body id="top" style="background-color:lightblue">
+         <h1 align="center" style="color:#ff6006"> CHRONIC KIDNEY DISEASE PREDICTION</h1>
+        <h3  align="center" style="color:orange"> "Good Health is the Greatest Wealth"</h3>
+             <section>
+          <div class="container">
+               <div class="row">
+                   <div class="form-box">
+                    <div class="col-md-8 col-sm-7">
+                        {{prediction_text}}
+                        {% if prediction_text==1%}
+
+                         <div >
+                              <h2>Medical Result</h2>
+                              <p>Your Condition is normal.</p>
+                              <blockquote>You are not having chronic kidney disease.</blockquote>
+			                  <!--<img src="images\result1.jpg" width="300" height="300"/>-->
+                              <p></p>
+
+                         </div>
+                        {%else%}
+                        <div >
+                              <h2>Medical Result</h2>
+                              <p>Your Condition is abnormal.</p>
+                              <blockquote>You are having chronic kidney disease.</blockquote>
+                              <!--<img src="images\result2.jpeg" width="300" height="300"/>-->
+                              <p></p>
+
+                         </div>
+                        {% endif %}
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-5">
+                         <div class="news-sidebar">
+
+                         </div>
+                    </div>
+                   </div>
+               </div>
+          </div>
+     </section>
+
+
+</body>
+</html>
