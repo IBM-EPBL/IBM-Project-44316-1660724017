@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Kidney Disease Result</title>
+</head>
+<style>
+.form-box{
+ width:380px;
+    height:480px;
+    position:relative;
+    margin: 6%  auto;
+    background:#ffb6c1;
+    padding:5 px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: white;
+}
+    </style>
+
+<body id="top" style="background-color:lightblue">
+        <h1 align="center" style="color:#ff6006"> CHRONIC KIDNEY DISEASE PREDICTION</h1>
+        <h3  align="center" style="color:orange"> "Good Health is the Greatest Wealth"</h3>
+
+        <p align="center">IBM PROJECT done by PNT2022TMID46390</p>
+    <div class="form-box">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 class='container-heading'><span class="heading_font">Chronic Kidney Disease Prediction</span></h2>
+
+        <br><br><br><br>
+
+        <!-- Result -->
+		<div style="color:black;" class="results">
+			{% if prediction==1 %}
+				<h1><span class='danger'>Oops! 🙁<br><br>You have CHRONIC KIDNEY DISEASE.<br><br>Please Consult Doctor.</span></h1>
+                <br><br><br><br><br><br>
+
+			{% elif prediction==0 %}
+				<h1><span class='safe'>🎉 Congratulation! 🎉<br><br>You DON'T have Chronic Kidney Disease.</span></h1>
+
+			{% endif %}
+		</div>
+        </form>
+
+    </div>
+    <div>
+            <br><br> <br><br><br><br><br><br><br><br>
+    </div>
+</body>
+
+</html>
